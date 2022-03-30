@@ -1,0 +1,170 @@
+/* back ground */
+.background {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(https://img4.thuthuatphanmem.vn/uploads/2020/08/02/hinh-nen-ngoi-nha-ben-khu-rung-xanh-la_014047414.jpg);
+  position: relative;
+}
+
+.background .wrapper {
+  margin-bottom: 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background__content {
+  background-color: transparent;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  color: white;
+}
+
+.background__content > * {
+  width: 1200px;
+}
+
+.background__content__name {
+  font-size: 60px;
+  font-weight: 900;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  color: transparent;
+}
+
+.background__content__skill ul {
+  list-style: none;
+  height: 80px;
+  overflow: hidden;
+}
+
+.background__content__skill ul li {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 80px;
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.background__content__from {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.background__content__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.background__content__button a {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 20px;
+  font-size: 23px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.background__content__button a i {
+  margin-right: 22px;
+  margin-left: 0.5px;
+  margin-top: 1px;
+}
+
+.background__content__button a:hover {
+  width: 240px;
+  color: #2162b8;
+  border-color: #2162b8;
+  background-color: #fff;
+}
+
+.background__content__button a:nth-child(1):hover {
+  width: 343px;
+}
+
+.background__content__button a:nth-child(3):hover {
+  width: 475px;
+}
+
+.background__content__button a span {
+  min-width: 2000px;
+  display: block;
+}
+
+.background__content__button .logo2 i {
+  margin-right: 10px;
+  -webkit-transform: translateX(-5.5px) translateY(0.38px);
+          transform: translateX(-5.5px) translateY(0.38px);
+  font-size: 30px;
+}
+
+.background__content__button .logo3 i {
+  font-size: 30px;
+  margin-right: 10px;
+  -webkit-transform: translateX(-7.3px) translateY(0.38px);
+          transform: translateX(-7.3px) translateY(0.38px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@-webkit-keyframes slide {
+  50% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px);
+  }
+}
+
+@keyframes slide {
+  50% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+  100% {
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px);
+  }
+}
+
+header {
+  z-index: 100;
+}
+
+body {
+  overflow: hidden;
+}
+/*# sourceMappingURL=background.css.map */

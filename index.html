@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project CV</title>
+
+    <!-- font chữ montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hurricane&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- cdn của cái icon bar -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font nghệ nghệ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hurricane&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img2.thuthuatphanmem.vn/uploads/2018/12/14/100-icon-cao_110447695.jpg"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/background.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>dungdepzai</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Portfolio</a>
+          </li>
+          <li>
+            <a href="">News</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+        <button>Buy now</button>
+      </nav>
+
+      <div class="bar-button" onclick="showNavPhone()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+
+      <div class="nav-phone" id="nav-phone">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>News</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="background" id="particles-js">
+      <!-- BEM: giảm sự trùng class -->
+      <!-- __ nhớ viết liền với chữ cái trước và sau, ko dc có dấu cách -->
+      <div class="wrapper">
+        <div class="background__content">
+          <div class="background__content__name">
+            <h1>Tiến Dũng</h1>
+          </div>
+          <div class="background__content__skill">
+            <ul>
+              <li>Front-end Developer</li>
+              <li>Back-end Developer</li>
+              <li>Fullstack Developer</li>
+            </ul>
+          </div>
+          <div class="background__content__from">based in HCM city</div>
+          <div class="background__content__button">
+            <a href="https://www.facebook.com/dungdepzai123/" target="blank">
+              <i class="fab fa-facebook-f"></i>
+              <span>FB: Nguyễn Tiến Dũng</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/_dungnt93/"
+              class="logo2"
+              target="blank"
+            >
+              <i class="fab fa-instagram"></i>
+              <span>IG: _dungnt93 </span>
+            </a>
+
+            <a
+              href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+              target="blank"
+              class="logo3"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>Email: dungntse171710@fpt.edu.vn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
+    <script src="./js/app.js"></script>
+    <script>
+      function showNavPhone() {
+        // DOM
+        document.getElementById("nav-phone").style.transform = "none";
+      }
+    </script>
+  </body>
+</html>

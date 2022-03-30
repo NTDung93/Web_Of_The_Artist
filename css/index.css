@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* header */
+
+header {
+  /* margin-left: 10%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  /* hoặc xài  */
+  /* width: 100%; */
+  background-color: transparent;
+  padding: 20px 0px;
+}
+
+/* logo */
+
+header .logo h1 {
+  /* transform: translateX(-200px); */
+  font-family: "Hurricane", cursive;
+  font-size: 55px;
+  color: white;
+}
+
+/* mấy cái bên phải như contact, portfolio,... */
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav {
+  /* position: absolute;
+  right: 10%; */
+  display: flex;
+  align-items: center;
+}
+
+header nav li {
+  margin: 0px 25px;
+}
+
+header nav li a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* thêm thẻ vô sau tất cả các thằng a trong li */
+header li a::after {
+  content: "";
+  height: 2px;
+  background-color: white;
+  display: block;
+  width: 0px;
+  transition: all 0.3s;
+  margin-top: 2px;
+}
+
+header li:hover a::after {
+  width: 100%;
+}
+
+/* button buy now */
+
+header nav button {
+  font-family: "Roboto", sans-serif;
+  margin-left: 50px;
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.1s;
+}
+
+header nav button:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-3px);
+}
+
+/* bar button */
+
+.bar-button i {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.bar-button {
+  height: fit-content;
+  display: none;
+}
+
+/* nav phone */
+
+.nav-phone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+
+/* back ground */
+
+.background {
+  background-color: darkblue;
+  height: 100vh;
+  background-image: url(https://img4.thuthuatphanmem.vn/uploads/2020/08/02/hinh-nen-ngoi-nha-ben-khu-rung-xanh-la_014047414.jpg);
+  background-position: center center;
+}
+
+/* reponsive */
+/* lưu ý: sau chữ and phải có 1 dấu cách ko là reponsive ko ăn đâu */
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: none !important;
+  }
+
+  header {
+    background-color: white;
+    position: unset;
+    padding: 5px 0px;
+  }
+
+  .bar-button {
+    font-size: 3.5vh;
+    display: block;
+  }
+
+  header .logo h1 {
+    color: black !important;
+    font-size: 7vh;
+    padding: 1vh 0vh;
+  }
+
+  .background {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+}
